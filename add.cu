@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cuda_runtime.h>
 
 // Kernel function
 __global__
@@ -40,7 +40,7 @@ int main(void) {
 	
 	// Free memory
 	cudaFree(x);
-	cudaFree(y)
+	cudaFree(y);
 	// delete [] x;
 	// delete [] y;
 
